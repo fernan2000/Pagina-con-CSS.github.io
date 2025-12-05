@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <!--Conectado con Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Tienda Kawai</title>
 </head>
 <body>
-    <header>
+
+<header class="top-banner">
+    <p>Envios gratis apartir de $480</p>
+</header>
+        <!-- dejando e la barra sola para aplicar position -->
         <nav class="nav-principal">
             <h1 class="logo">Tienda Kawai 🌸</h1>
             <ul class="nav-lista">
@@ -18,7 +26,7 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+  
 
     <main>
         <!-- Catálogo -->
@@ -29,6 +37,7 @@
             <div class="catalogo-contenedor">
                 <!-- Producto 1 -->
                 <div class="producto-tarjeta">
+                    <span class="producto-badge">oferta kawaii</span>
                     <img src="https://www.duckstore.es/img/cms/megamenu_deportes2.png" alt="Patito de hule" class="producto-img">
                     <h3 class="producto-titulo">Patito de hule</h3>
                     <p class="producto-desc">
@@ -41,7 +50,9 @@
 
                 <!-- Producto 2 -->
                 <div class="producto-tarjeta">
-                    <img src="img/bts.jpg" alt="Washitape decorativo" class="producto-img">
+                    <!--agregar bagde de oferta position:absolute-->
+                    <span class="producto-badge">oferta kawaii</span>
+                    <img src="https://asset.action.com/image/upload/t_digital_product_image/w_1080/23189125.webp" alt="Washitape decorativo" class="producto-img">
                     <h3 class="producto-titulo">Washitape kawaii</h3>
                     <p class="producto-desc">
                         Cinta decorativa para apuntes bonitos, bullet journal y planners.
@@ -53,8 +64,9 @@
 
                 <!-- Producto 3 -->
                 <div class="producto-tarjeta">
-                    <img src="img/bts.jpg" alt="Libreta kawaii" class="producto-img">
-                    <h3 class="producto-titulo">Libreta pastel</h3>
+                    <span class="producto-badge">oferta kawaii</span>
+                    <img src="img/libreta-perrito.jpeg" alt="Libreta kawaii" class="producto-img">
+                    <h3 class="producto-titulo">Libreta</h3>
                     <p class="producto-desc">
                         Libreta tamaño A5 con hojas rayadas y portada pastel. Ideal para la escuela o la oficina.
                     </p>
@@ -64,7 +76,8 @@
 
                 <!-- Producto 4 -->
                 <div class="producto-tarjeta">
-                    <img src="https://images.pexels.com/photos/5088008/pexels-photo-5088008.jpeg" alt="Pluma de gel kawaii" class="producto-img">
+                    <span class="producto-badge">oferta kawaii</span>
+                    <img src="img/plumas-gel.jpeg" alt="Pluma de gel kawaii" class="producto-img">
                     <h3 class="producto-titulo">Plumas de gel</h3>
                     <p class="producto-desc">
                         Set de 6 plumas de gel en tonos pastel, punta fina, perfectas para subrayar y hacer apuntes lindos.
@@ -134,5 +147,7 @@
         <p>&copy; 2025 Tienda Kawai. Todos los derechos reservados.</p>
         <p>Síguenos en redes: Instagram @tiendakawai · TikTok @tiendakawai</p>
     </footer>
+
+    <a href="#catalogo">ver carrito</a>
 </body>
 </html>
