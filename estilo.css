@@ -1,213 +1,100 @@
-/* RESET BÁSICO 
-   - Elimina márgenes y padding por defecto
-   - Aplica box-sizing: border-box para que el ancho incluya padding/border
-*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: 'Lexend', sans-serif;
 }
+#contacto{
+    background: #ae3067;
+    border:#f95c93;
 
-/* Define color de fondo y tipografía*/
-body{
-    font-family: "Lexend", sans-serif;
-    background-color: #f7f5fa;
-    color: #333;  
-}
 
-/* Limitar ancho y centrar
-   - header, main y footer no serán de ancho completo
-   - max-width evita que la página se vea muy ancha
-   - margin auto los coloca al centro del body
-*/
-header, main, footer{
-    width: 100%;
-    max-width: 1200px;   /* puedes cambiarlo a 900, 1000, etc */
-    margin: 0 auto;
-}
+    padding: 12px 14px 5px 8px;
+    margin: 10px 10px 5px 10px;
 
-/* NAV */
-.nav-principal{
-    background-color: #ffb6e6;
-    padding: 15px 25px;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 
-}
+    padding-bottom: 14px;
+    padding-right: 5px;
+    padding-left: 2px;
 
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-}
+    margin: 10px;
 
-/* Menú de navegación */
-.nav-lista{
-    list-style: none;
-}
-
-/* Estilo de los enlaces del menú */
-.nav-lista a{
-    text-decoration: none;
-    color: #4b004b;
-    font-weight: bold;
-    transition: .3s;
-}
-
-.nav-lista a:hover{
-    color: #ff0084; /* color cuando pasas el cursor */
-}
-
-/* CONTENEDOR DE PRODUCTOS*/
-.catalogo-contenedor{
-    padding: 20px;
-}
-
-/* TARJETA DEL PRODUCTO */
-.producto-tarjeta{
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    padding-bottom: 20px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    transition: transform .2s ease, box-shadow .2s ease;
-    position: relative;
-}
-
-/* Efecto al pasar el mouse */
-.producto-tarjeta:hover{
-    transform: translateY(-6px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
-}
-
-/* IMAGEN DEL PRODUCTO */
-.producto-img{
-    width: 100%;
-    height: 220px;
-    object-fit: contain; /* ajusta imagen sin deformarse */
-    background-color: #fafafa;
-    padding: 10px;
-}
-
-/* TÍTULO DEL PRODUCTO */
-.producto-titulo{
-    font-size: 22px;
-    font-weight: 700;
     margin-top: 10px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+
 }
 
-/* DESCRIPCIÓN DEL PRODUCTO */
+.producto-tarjeta {
+    width: 280px;
+    background-color: blueviolet;
+    border-radius: 12px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
+.producto-img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+}
+.producto-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
 .producto-desc{
     font-size: 14px;
-    color: #6d4c41;
-    margin: 10px 15px;
+    color: rgb(212, 228, 107);
 }
 
-/* PRECIO */
-.producto-precio{
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff4b91;
-    margin-bottom: 10px;
-}
-
-/* BOTÓN DEL PRODUCTO */
 .producto-btn{
-    background: #ff8bb3;
-    color: white;
+    background-color: aqua;
+    color: aquamarine;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 6px;
     cursor: pointer;
-    transition: .3s ease;
-    font-size: 15px;
-    font-weight: bold;
+    transition: 0.3s;
 }
 
 .producto-btn:hover{
-    background: #e00064;
-}
-
-/* SECCIONES GENERALES */
-section{
-    padding: 25px;
-}
-
-h2{
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-ul{
-    padding-left: 20px;
-    margin: 10px 0;
-}
-
-li{
-    margin-bottom: 6px;
-}
-
-/* CONTACTO EN DOS COLUMNAS*/
-.contacto-section{
-    margin-top: 40px;
-}
-
-/* FORMULARIO */
-.form-contacto{
-    background: rgb(231, 155, 155);
-    padding: 20px;
-    border-radius: 15px;
-}
-
-/* Inputs y textarea del formulario */
-.form-contacto input,
-.form-contacto textarea{
-    padding: 10px;
-    border: 1px solid #ba3b3b;
-    border-radius: 6px;
-}
-
-
-/* FOOTER */
-footer{
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    background-color: #db2294;
-    color: #4b004b;
-}
-
-/*/ Boton flotante del carrito run run */
-.boton-carrito{
-    position: fixed;
-    bottom: 25px;
-    background-color: #4b004b;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 50px;
+    background-color: rgb(49, 49, 93);
     color: white;
-    padding: 12px 20px;
-    z-index: 1500;
-    right: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: .2s ease;
-
 }
 
-.boton-carrito:hover{
-    background-color: #38041f;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+.producto-tarjeta {
+  width: 280px;
+  background-color: antiquewhite;
+  border-radius: 12px;
+  text-align: center;
 }
 
-.producto-badge{
-    position: absolute;
-    background-color: #cb1c56;
-    top: 10px;
-    left: 10px;
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
+.producto-img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+}
+
+.producto-titulo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.producto-desc {
+  font-size: 14px;
+  color: brown;
+}
+
+.producto-btn {
+  background-color: chocolate;
+  color: whitesmoke;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.producto-btn:hover {
+  background-color: brown;
 }
