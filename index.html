@@ -1,70 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>tienda tailandesa</title>
+    <!--Conectado con Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Tienda Kawai</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <li><a href="">MENU</a></li>
-            <li><a href="">CATALOGO</a></li>
-            <li><a href="">ENTREGAS</a></li>
-        </nav>
-    </header>
 
-    <main>
-        <!-- productos -->
-        <section>
+<header class="top-banner">
+    <p>Envios gratis apartir de $480</p>
+</header>
+
+<nav class="nav-principal">
+    <h1 class="logo">Tienda Kawai 🌸</h1>
+    <ul class="nav-lista">
+        <li><a href="#catalogo">Menú</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#entregas">Entregas</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Catálogo -->
+    <section id="catalogo">
+        <h2>Catálogo de productos</h2>
+        <p>Encuentra los productos más kawaii para tu escritorio, tu cuarto y tus clases en línea.</p>
+
+        <div class="catalogo-contenedor">
+            <!-- Producto 1 -->
             <div class="producto-tarjeta">
-                <img src="img/re.jpg" alt="" class="producto-img">
-                <h3 class="producto-titulo">REFRESCO</h3>
-                <p class="producto-desc">Descripcion del producto</p>
-                <button class="producto-btn">agregar al carrito</button>
+                <span class="producto-badge">oferta kawaii</span>
+                <img src="img/te.jpg" alt="bebidas kawai" class="producto-img">
+                <h3 class="producto-titulo">bebida de TE</h3>
+                <p class="producto-desc">
+                    Bebida de té con burbujas, sabor a menta y miel. Ideal para refrescarte mientras estudias.
+                </p>
+                <p class="producto-precio">$79 MXN</p>
+                <button class="producto-btn">Agregar al carrito</button>
             </div>
 
+            <!-- Producto 2 -->
             <div class="producto-tarjeta">
-                <img src="img/comida.jpg" alt="" class="producto-img">
-                <h3 class="producto-titulo">comida</h3>
-                <p class="producto-desc">Descripcion del producto</p>
-                <button class="producto-btn">agregar al carrito</button>
+                <span class="producto-badge">oferta kawaii</span>
+                <img src="img/postre.jpg" alt="Washitape decorativo" class="producto-img">
+                <h3 class="producto-titulo">postre kawaii</h3>
+                <p class="producto-desc">
+                    Delicioso postre japonés de mochi relleno de helado de gresa, cubierto con salsa de leche.
+                </p>
+                <p class="producto-precio">$55 MXN</p>
+                <button class="producto-btn">Agregar al carrito</button>
+            </div> 
+
+            <!-- Producto 3 -->
+            <div class="producto-tarjeta">
+                <span class="producto-badge">oferta kawaii</span>
+                <img src="img/comida.jpg" alt="Libreta kawaii" class="producto-img">
+                <h3 class="producto-titulo">comida kawai</h3>
+                <p class="producto-desc">
+                    Bento box con arroz, vegetales y pollo teriyaki, presentada en un empaque adorable.
+                </p>
+                <p class="producto-precio">$99 MXN</p>
+                <button class="producto-btn">Agregar al carrito</button>
             </div>
 
+            <!-- Producto 4 -->
             <div class="producto-tarjeta">
-                <img src="img/postre.jpg" alt="" class="producto-img">
-                <h3 class="producto-titulo">Postre</h3>
-                <p class="producto-desc">Descripcion del producto</p>
-                <button class="producto-btn">agregar al carrito</button>
+                <span class="producto-badge">oferta kawaii</span>
+                <img src="img/shushi.jpg" alt="Pluma de gel kawaii" class="producto-img">
+                <h3 class="producto-titulo">shushi</h3>
+                <p class="producto-desc">
+                    Set de sushi de salmón y aguacate, acompañado de salsa de soya y wasabi en empaque tierno.
+                </p>
+                <p class="producto-precio">$89 MXN</p>
+                <button class="producto-btn">Agregar al carrito</button>
             </div>
+        </div>
+    </section>
 
-            <div class="producto-tarjeta">
-                <img src="img/te.jpg" alt="" class="producto-img">
-                <h3 class="producto-titulo">Té Helado</h3>
-                <p class="producto-desc">Descripcion del producto</p>
-                <button class="producto-btn">agregar al carrito</button>
-            </div>
+    <!-- Entregas -->
+    <section id="entregas">
+        <h2>Entregas y envíos</h2>
+        <p>Queremos que tus productos kawaii lleguen rápido y seguros. Así funcionan nuestras entregas:</p>
+        <ul>
+            <li><strong>Envíos nacionales:</strong> A todo México por paquetería (3 a 7 días hábiles).</li>
+            <li><strong>Envíos express:</strong> Disponible en zonas seleccionadas (1 a 2 días hábiles).</li>
+            <li><strong>Entrega local:</strong> Punto de entrega acordado en CDMX (sin costo extra).</li>
+            <li><strong>Seguimiento:</strong> Te enviamos tu número de guía por correo o WhatsApp.</li>
+        </ul>
+        <p><strong>Forma de pago:</strong> Transferencia, tarjeta de crédito/débito y algunas billeteras digitales.</p>
+    </section>
 
-            <div class="producto-tarjeta">
-                <img src="img/shushi.jpg" alt="" class="producto-img">
-                <h3 class="producto-titulo">Sushi</h3>
-                <p class="producto-desc">Descripcion del producto</p>
-                <button class="producto-btn">agregar al carrito</button>
-            </div>
-        </section>
-        <!--entregas-->
-        <section>
+    <!-- Acerca de -->
+    <section id="acerca">
+        <h2>Acerca de Tienda Kawai</h2>
+        <p>
+            En Tienda Kawai, nos apasiona traer un pedacito de ternura y alegría a tu vida diaria. 
+            Fundada en 2020, nuestra misión es ofrecer productos que no solo sean funcionales, 
+            sino que también inspiren sonrisas y creatividad.
+        </p>
+        <p>
+            Creemos que lo kawaii no es solo una estética, sino una forma de ver el mundo con optimismo 
+            y cariño. Por eso, seleccionamos cuidadosamente cada artículo en nuestro catálogo, 
+            asegurándonos de que cumpla con nuestros estándares de calidad y encanto.
+        </p>
+    </section>
 
-        </section>
-        
-        <section>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto-section">
+        <div class="contacto-contenido">
+            <h2>Contacto</h2>
+            <p>¿Tienes dudas sobre un producto, envíos o pedidos personalizados? Escríbenos.</p>
+            <p><strong>Correo:</strong> hola@tiendakawai.mx</p>
+            <p><strong>WhatsApp:</strong> +52 55 0000 0000</p>
+            <p><strong>Horario:</strong> Lunes a viernes 10:00 a 19:00 hrs.</p>
+        </div>
 
-        </section>
+        <aside class="contacto-aside">
+            <form class="form-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </aside>
+    </section>
+</main>
 
-    </main>
-    <footer>
+<footer>
+    <p>&copy; 2025 Tienda Kawai. Todos los derechos reservados.</p>
+    <p>Síguenos en redes: Instagram @tiendakawai · TikTok @tiendakawai</p>
+</footer>
 
-    </footer>
+<a href="#catalogo">ver carrito</a>
+
 </body>
 </html>
