@@ -1,6 +1,6 @@
 /* RESET BÁSICO 
-   - Elimina márgenes y padding por defecto
-   - Aplica box-sizing: border-box para que el ancho incluya padding/border
+- Elimina márgenes y padding por defecto
+- Aplica box-sizing: border-box para que el ancho incluya padding/border
 */
 *{
     margin: 0;
@@ -16,9 +16,9 @@ body{
 }
 
 /* Limitar ancho y centrar
-   - header, main y footer no serán de ancho completo
-   - max-width evita que la página se vea muy ancha
-   - margin auto los coloca al centro del body
+- header, main y footer no serán de ancho completo
+- max-width evita que la página se vea muy ancha
+- margin auto los coloca al centro del body
 */
 header, main, footer{
     width: 100%;
