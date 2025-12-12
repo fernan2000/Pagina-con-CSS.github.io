@@ -98,7 +98,7 @@ header, main, footer{
 
 /* IMAGEN DEL PRODUCTO */
 .producto-img{
-    width: 100%;
+    width: 70%;
     height: 220px;
     object-fit: contain; /* ajusta imagen sin deformarse */
     background-color: #fafafa;
@@ -161,7 +161,69 @@ ul{
 
 li{
     margin-bottom: 6px;
+    
 }
+
+/*SECCION EQUIPO    */
+.equipo-section{
+    text-align: center;
+    padding: 40px 25px;
+}
+.equipo-section p{
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+.equipo-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.equipo-card{
+    background-color: #c9a1ea;
+    width: 250px;
+    padding: 60px 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    /* flex interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.equipo-foto{
+    width: 80%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #dcc9dc;
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.equipo-card h3{
+    margin-top: 15px;
+    color: rgb(75, 12, 12);
+    font-size: 20px;
+}
+.equipo-rol{
+    font-size: 14px;
+    color: #4b004b;
+    margin: 10px;
+}
+.equipo-desc{
+    font-size: 13px;
+    color: #3e363e;
+    line-height: 1;
+}
+
 
 /* CONTACTO EN DOS COLUMNAS*/
 .contacto-section{
@@ -175,7 +237,7 @@ li{
 
 .contacto-contenido,
 .contacto-aside{
-    flex: 1 1 280px; /* crece y encoge según el espacio, base 300px */
+    flex: 1 1 70px; /* crece y encoge según el espacio, base 300px */
 
 }
 
